@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgpic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/tony_stark"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/txttony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:accessibilityHeading="true"
+        android:padding="8dp"
+        android:text="Tony Stark"
+        android:textColor="#17202A "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="2dp"
+        android:padding="8dp"
+        android:text="tony@starkindustries.com"
+        android:textColor="#C20FD3"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_below="@id/txttony" />
+
+    <TextView
+        android:id="@+id/txtno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="2dp"
+        android:padding="8dp"
+        android:text="+91 11155555"
+        android:textColor="#078912"
+        android:textSize="18sp"
+        android:layout_below="@id/txtmail"/>
+
+    <Button
+        android:id="@+id/btnmiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#3498DB"
+        android:text="do you MISS me?"
+        android:textColor="#FDFEFE"
+        android:textSize="20sp"
+        android:layout_below="@id/imgpic"/>
+
+    <EditText
+        android:id="@+id/etyes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="yes or no"
+        android:inputType="text"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/btnmiss"
+        />
+
+</RelativeLayout>
